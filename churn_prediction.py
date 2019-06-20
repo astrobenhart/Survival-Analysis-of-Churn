@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix, accuracy_score
 
 # import data
-data = pd.read_csv('/home/bhart/Documents/ML_projects/examples/churn_analysis/data/WA_Fn-UseC_-Telco-Customer-Churn.csv')
+data = pd.read_csv('data/WA_Fn-UseC_-Telco-Customer-Churn.csv')
 
 # a lot of data here is catagorical, let's use pd.get_dummies to fix that
 dummies = pd.get_dummies(data[[
